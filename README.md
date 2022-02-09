@@ -1,6 +1,10 @@
 # Mark's Drone Demo Project
 By Mark Martynenko
+
 My project for demonstrating competency in various aspects of Unity development.
+
+NOTE: This repo comes without Unity Store assets, due to file size limitations and copyright. Use the build available on GDrive to play the game: 
+https://drive.google.com/file/d/1Bov7Bw9vxQ6vJWf_i1xRf6Jk_wGW1cGO/view?usp=sharing
 
 This is a short game about flying a drone inside a sci-fi warehouse. Press Esc to see the controls.
 
