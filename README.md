@@ -1,4 +1,5 @@
-# Mark-s-Drone-Demo-Project
+# Mark's Drone Demo Project
+By Mark Martynenko
 My project for demonstrating competency in various aspects of Unity development.
 
 This is a short game about flying a drone inside a sci-fi warehouse. Press Esc to see the controls.
