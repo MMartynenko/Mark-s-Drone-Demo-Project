@@ -31,7 +31,7 @@ namespace Drone.AI {
         private float evasionDistance = 0;
         private float evasionTime = 0;
 
-        private void Start() {
+        protected virtual void Start() {
             rb = GetComponent<Rigidbody>();
             controls = GetComponent<AIDroneInput>();
             randomPerlin = UnityEngine.Random.value * 100;

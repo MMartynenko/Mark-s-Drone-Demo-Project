@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8774007300343810171
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 422782788316798310, guid: 37e541d936aadba499225efa6bb0e874, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 422782788316798310, guid: 37e541d936aadba499225efa6bb0e874, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 422782788316798310, guid: 37e541d936aadba499225efa6bb0e874, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 422782788316798310, guid: 37e541d936aadba499225efa6bb0e874, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 422782788316798310, guid: 37e541d936aadba499225efa6bb0e874, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 422782788316798310, guid: 37e541d936aadba499225efa6bb0e874, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 422782788316798310, guid: 37e541d936aadba499225efa6bb0e874, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 422782788316798310, guid: 37e541d936aadba499225efa6bb0e874, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 422782788316798310, guid: 37e541d936aadba499225efa6bb0e874, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 422782788316798310, guid: 37e541d936aadba499225efa6bb0e874, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 422782788316798310, guid: 37e541d936aadba499225efa6bb0e874, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1984931439461224873, guid: 37e541d936aadba499225efa6bb0e874, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7ce88dd9da3c1b4439824758a237eb28, type: 2}
+    - target: {fileID: 2381170658120399322, guid: 37e541d936aadba499225efa6bb0e874, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7ce88dd9da3c1b4439824758a237eb28, type: 2}
+    - target: {fileID: 2587104987295483946, guid: 37e541d936aadba499225efa6bb0e874, type: 3}
+      propertyPath: m_Name
+      value: Pathfinder Drone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3206092257869796582, guid: 37e541d936aadba499225efa6bb0e874, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79ae26eea3bce554d86409e78c478c23, type: 2}
+    - target: {fileID: 4148052504097363072, guid: 37e541d936aadba499225efa6bb0e874, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79ae26eea3bce554d86409e78c478c23, type: 2}
+    - target: {fileID: 5694785755968834194, guid: 37e541d936aadba499225efa6bb0e874, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79ae26eea3bce554d86409e78c478c23, type: 2}
+    - target: {fileID: 7402939713713494900, guid: 37e541d936aadba499225efa6bb0e874, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79ae26eea3bce554d86409e78c478c23, type: 2}
+    - target: {fileID: 9182237923555214984, guid: 37e541d936aadba499225efa6bb0e874, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7ce88dd9da3c1b4439824758a237eb28, type: 2}
+    m_RemovedComponents:
+    - {fileID: 5198163279158441813, guid: 37e541d936aadba499225efa6bb0e874, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 37e541d936aadba499225efa6bb0e874, type: 3}
+--- !u!1 &6495518186825236561 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2587104987295483946, guid: 37e541d936aadba499225efa6bb0e874, type: 3}
+  m_PrefabInstance: {fileID: 8774007300343810171}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4975149715385610475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6495518186825236561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45198dd3ec02d4642806379f68b49654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  maxSpeed: 10
+  minSpeed: 0
+  maxSpeedFactor: 0.5
+  maxVerticalSpeed: 5
+  maxYawSensitivity: 0.01
+  angleThreshold: 90
+  cautiousMaxDistanceVertical: 5
+  accelSensitivity: 0.5
+  brakeSensitivity: 1
+  horizontalWanderDistance: 0
+  verticalWanderDistance: 0
+  verticalEvasionDistance: 1
