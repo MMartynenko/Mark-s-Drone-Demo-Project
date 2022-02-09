@@ -57,7 +57,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 302545d38efc72446b9dca1ce1db966d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxThrottle: 4
+  maxThrottle: 2
   fanAnimator: {fileID: 3525537386004843113}
   maxFanRotSpeed: 2
   minFanRotSpeed: 0.5
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 302545d38efc72446b9dca1ce1db966d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxThrottle: 4
+  maxThrottle: 2
   fanAnimator: {fileID: 3525537386639068557}
   maxFanRotSpeed: 2
   minFanRotSpeed: 0.5
@@ -604,7 +604,7 @@ GameObject:
   - component: {fileID: 3992301362007218814}
   - component: {fileID: 56395577045325275}
   - component: {fileID: 2822820403286663441}
-  - component: {fileID: 4872758447319125377}
+  - component: {fileID: 5969833528400493882}
   m_Layer: 0
   m_Name: Drone
   m_TagString: Untagged
@@ -680,7 +680,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4872758447319125377
+--- !u!65 &5969833528400493882
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -750,7 +750,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 302545d38efc72446b9dca1ce1db966d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxThrottle: 4
+  maxThrottle: 2
   fanAnimator: {fileID: 3525537386487293917}
   maxFanRotSpeed: 2
   minFanRotSpeed: 0.5
@@ -946,7 +946,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 302545d38efc72446b9dca1ce1db966d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxThrottle: 4
+  maxThrottle: 2
   fanAnimator: {fileID: 3525537386046424302}
   maxFanRotSpeed: 2
   minFanRotSpeed: 0.5
@@ -961,7 +961,6 @@ GameObject:
   - component: {fileID: 5648630681053622667}
   - component: {fileID: 1058762417599902778}
   - component: {fileID: 5039542321121529594}
-  - component: {fileID: 5411667729490097122}
   m_Layer: 0
   m_Name: stand
   m_TagString: Untagged
@@ -1032,19 +1031,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5411667729490097122
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8759144861481923839}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.2413826, y: 3.7698343, z: 0.6545168}
-  m_Center: {x: -0.007555008, y: -0.0044052643, z: -0.0921337}
 --- !u!1 &8909895541792632755
 GameObject:
   m_ObjectHideFlags: 0
@@ -1055,8 +1041,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6746240759324015359}
   - component: {fileID: 499022469983571335}
-  - component: {fileID: 45346609976170017}
   - component: {fileID: 5759239762087029140}
+  - component: {fileID: 4935316660190394271}
   m_Layer: 0
   m_Name: Root Drone
   m_TagString: Untagged
@@ -1089,26 +1075,13 @@ Rigidbody:
   m_GameObject: {fileID: 8909895541792632755}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Drag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 1
+  m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &45346609976170017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8909895541792632755}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70012a930cda1804e882b7c9b3925e58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weight: 1
 --- !u!114 &5759239762087029140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1121,11 +1094,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0023ff6a7e3dfb642ba5250d6d7ab943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weight: 1
+  weight: 0.5
   minMaxPitch: 30
   minMaxRoll: 30
   yawPower: 4
   lerpSpeed: 2
+--- !u!135 &4935316660190394271
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8909895541792632755}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &9062150870766692499
 GameObject:
   m_ObjectHideFlags: 0

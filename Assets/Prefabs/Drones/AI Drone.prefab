@@ -53,7 +53,46 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8909895541792632755, guid: 0b5c759502c0d1c41a5736640cc08286, type: 3}
       propertyPath: m_Name
-      value: Root Drone
+      value: AI Drone
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b5c759502c0d1c41a5736640cc08286, type: 3}
+--- !u!1 &2587104987295483946 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8909895541792632755, guid: 0b5c759502c0d1c41a5736640cc08286, type: 3}
+  m_PrefabInstance: {fileID: 6359487906259756953}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &9137591994984359829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2587104987295483946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22fdc3ade40315c4db91b5a708b81b5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5198163279158441813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2587104987295483946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a1a782113dc29945a3e9de629aabf1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  maxSpeed: 20
+  maxVerticalSpeed: 10
+  cautiousSpeedFactor: 0.05
+  targetAccuracy: 0.2
+  yawSensitivity: 0.01
+  cautiousMaxDistanceRoll: 10
+  cautiousMaxDistanceVertical: 5
+  accelSensitivity: 0.04
+  brakeSensitivity: 1

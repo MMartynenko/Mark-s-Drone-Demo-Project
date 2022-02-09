@@ -22,7 +22,8 @@ namespace Drone.Physics {
 
         void Start() {
             input = GetComponent<IDroneInput>();
-            engines = GetComponentsInChildren<DroneEngine>().ToList();            
+            engines = GetComponentsInChildren<DroneEngine>().ToList();
+            SetYaw(transform.rotation.eulerAngles.y);            
         }
 
         protected override void HandlePhysics() {
@@ -31,9 +32,15 @@ namespace Drone.Physics {
         }
 
         private void HandleControls() {
-            float pitch = input.Pitch * minMaxPitch; 
-            float roll = -input.Roll * minMaxRoll;
-            yaw += input.Yaw * yawPower;            
+            rb.isKinematic = input.ControlDisabled;
+
+            float inputPitch = input.ControlDisabled ? 0 : input.Pitch;
+            float inputRoll = input.ControlDisabled ? 0 : input.Roll;
+            float inputYaw = input.ControlDisabled ? 0 : input.Yaw;            
+
+            float pitch = inputPitch * minMaxPitch; 
+            float roll = -inputRoll * minMaxRoll;
+            yaw += inputYaw * yawPower;            
 
             finalPitch = Mathf.Lerp(finalPitch, pitch, lerpSpeed * Time.deltaTime);
             finalRoll = Mathf.Lerp(finalRoll, roll, lerpSpeed * Time.deltaTime);
@@ -55,6 +62,16 @@ namespace Drone.Physics {
 
         public float GetVelocity() {
             return rb.velocity.magnitude;
+        }   
+        
+        public void SetYaw(float eulerY) {
+            yaw = eulerY;
+            finalYaw = yaw;
+        }
+
+        public void Halt() {
+            rb.velocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;                    
         }        
     }
 }

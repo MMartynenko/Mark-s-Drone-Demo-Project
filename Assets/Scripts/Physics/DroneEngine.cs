@@ -17,15 +17,16 @@ namespace Drone.Physics {
             upVector.x = 0;
             upVector.z = 0;
             float diff = 1 - upVector.magnitude;
-            float finalDiff = diff * UnityEngine.Physics.gravity.magnitude;                      
+            float finalDiff = diff * UnityEngine.Physics.gravity.magnitude;
+            float inputThrottle = inputs.ControlDisabled ? 0 : inputs.Throttle;
 
             Vector3 engineForce = Vector3.zero;
             float autoHover = rb.mass * UnityEngine.Physics.gravity.magnitude + finalDiff;            
             if (!inputs.AutoHover) autoHover = 0;
-            engineForce = transform.up * (autoHover + inputs.Throttle * maxThrottle) / 4;            
+            engineForce = transform.up * (autoHover + inputThrottle * maxThrottle) / 4;            
 
             rb.AddForce(engineForce, ForceMode.Force);
-            HandlePropellers(inputs.Throttle);
+            HandlePropellers(inputThrottle);            
         }
 
         private void HandlePropellers(float throttle) {           

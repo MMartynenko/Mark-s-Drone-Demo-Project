@@ -7,6 +7,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1677170811489447179, guid: 0b5c759502c0d1c41a5736640cc08286, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79ae26eea3bce554d86409e78c478c23, type: 2}
+    - target: {fileID: 2822820403286663441, guid: 0b5c759502c0d1c41a5736640cc08286, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79ae26eea3bce554d86409e78c478c23, type: 2}
+    - target: {fileID: 4539055565938572525, guid: 0b5c759502c0d1c41a5736640cc08286, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79ae26eea3bce554d86409e78c478c23, type: 2}
+    - target: {fileID: 4884879671907726896, guid: 0b5c759502c0d1c41a5736640cc08286, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ca862d9708fb270498ff25634a51396d, type: 2}
     - target: {fileID: 6746240759324015359, guid: 0b5c759502c0d1c41a5736640cc08286, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -51,6 +67,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7048598823624897305, guid: 0b5c759502c0d1c41a5736640cc08286, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79ae26eea3bce554d86409e78c478c23, type: 2}
+    - target: {fileID: 8376452737985213311, guid: 0b5c759502c0d1c41a5736640cc08286, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79ae26eea3bce554d86409e78c478c23, type: 2}
+    - target: {fileID: 8740060356972912195, guid: 0b5c759502c0d1c41a5736640cc08286, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 719efd02f6cfa794ea0a203cf90365a6, type: 2}
+    - target: {fileID: 8740060356972912195, guid: 0b5c759502c0d1c41a5736640cc08286, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: ca862d9708fb270498ff25634a51396d, type: 2}
     - target: {fileID: 8909895541792632755, guid: 0b5c759502c0d1c41a5736640cc08286, type: 3}
       propertyPath: m_Name
       value: Player Drone

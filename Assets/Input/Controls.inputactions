@@ -146,7 +146,7 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "QE",
+                    "name": "Arrows",
                     "id": "755f5af0-ff8f-4670-8565-df572ef870e2",
                     "path": "1DAxis",
                     "interactions": "",
@@ -159,7 +159,7 @@
                 {
                     "name": "negative",
                     "id": "cba8b9b4-e8b8-4026-9611-69e9b7dc8675",
-                    "path": "<Keyboard>/q",
+                    "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -170,7 +170,7 @@
                 {
                     "name": "positive",
                     "id": "afcf056d-fc68-4db6-9f55-ceee5e35f15f",
-                    "path": "<Keyboard>/e",
+                    "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

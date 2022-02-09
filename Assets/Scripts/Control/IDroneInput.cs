@@ -6,7 +6,9 @@ namespace Drone.Control {
         float Roll { get; }
         float Yaw { get; }
         float Throttle { get; }
-        bool AutoHover { get; }        
+        bool AutoHover { get; }
+        bool ControlDisabled { get; set; }
+        void StopAndDisable();
     }
 }
 
